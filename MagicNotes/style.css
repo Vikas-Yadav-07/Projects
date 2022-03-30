@@ -1,0 +1,241 @@
+*{
+    font-family: 'Architects Daughter', cursive;
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+
+}
+body
+{
+    background: burlywood;
+}
+
+.section3
+{
+    position: absolute;
+    left: 40%;
+    top: 26%;
+    height: 350px;
+    width: 350px;
+    display:block;
+    transition: 1s ease;
+    
+}
+textarea
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    background: white;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    box-shadow: 5px 10px 50px grey;
+    font-size: 30px;
+    resize: none;
+    word-spacing: 15px;
+    color: grey;
+    transition: .2s;
+    
+    
+}
+.check-btn
+{
+    position: absolute;
+    top: 13px;
+    right: 50px;
+    font-size: 25px;
+    opacity: 0.8;
+    color: green;
+    cursor: pointer;
+    transition: 1s ease;
+    
+}
+.x-btn
+{
+    position: absolute;
+    top: 13px;
+    right: 20px;
+    color: red;
+    cursor: pointer;
+    font-size: 25px;
+    transition: 1s ease;
+    border-radius: 50%;
+}
+.check-btn:hover
+{
+    /* box-shadow: 12px 10px 50px green; */
+    background:none;
+    border-radius: 50%;
+    transform: rotate(360deg);
+    /* transform: scale(1.4); */
+    
+    /* transition: 1s ease; */
+}
+.x-btn:hover
+{
+    box-shadow: 4px 4px 15px tomato;
+    /* background:white; */
+    color: tomato;
+    transform: rotate(90deg);
+    
+    
+
+}
+
+.section1
+{
+    margin-right: 150px;
+    /* margin-bottom: 20px; */
+    margin-top: 20px;
+    text-align: right;
+
+}
+.section1 button 
+{
+    box-shadow: 4px 5px 50px 5px black;
+    z-index: 3;
+    /* position: absolute; */
+    /* margin-bottom: 10px; */
+    transition: 0.3s ease;
+    position: fixed;
+    
+}
+.section1 button:hover
+{
+    box-shadow: 4px 5px 5px 5px black;
+    transform: scale(1.4);
+
+
+}
+
+
+
+.section2
+{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    color: white;
+    letter-spacing: 4px;
+    word-spacing: 8px;
+    margin-left: 4%;
+    margin-right:4% ;
+    /* margin-top: px; */
+}
+
+.note-item
+{
+    background: black;
+    margin-top: 20px;
+    margin: 20px 20px;
+    width: 300px;
+    height: 300px;
+    border-radius: 6px;
+    padding: 14px 14px;
+    overflow: auto;
+    color: black;
+    cursor: pointer;
+    box-shadow: 4px 5px 10px 5px black;
+    transition: 0.5s ease;
+    transform: scale(1);
+
+
+}
+.note-item:hover
+{
+   
+    box-shadow: 4px 5px 50px 5px tomato;
+    transform: scale(1.5);
+    z-index: 2;
+    
+
+    
+}
+
+
+.note-del
+{
+    background: none;
+    color: white;
+    background-color: tomato;
+    width: 30px;
+    height: 30px;
+    margin-top: 40px;
+    font-size: 10px;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 5px 5px 20px grey;
+    transition: 0.2s;
+
+}
+
+.note-del:hover
+{
+    box-shadow: 10px 10px 30px tomato;
+    /* transform: scale(1.5); */
+    color: tomato;
+    animation-name: scale;
+    animation-duration: 0.5s;
+    
+    animation-iteration-count: infinite;
+
+    background-color: white;
+}
+.note-del i:hover
+{
+    transform: rotate(360deg);
+}
+
+@keyframes scale {
+    0%{transform: scale(1.5);}
+    50%{transform: scale(1.6);}
+    100%{transform: scale(1.5);}
+
+}
+
+.note-txt
+{
+    text-align: left;
+    text-overflow: clip;
+    font-size: 30px;
+    text-shadow: 4px 4px 10px grey;
+}
+
+.heading
+{
+    font-size: 10vw;
+    width: 80vw;
+    text-align: center;
+    position: fixed;
+    user-select: none;
+    stroke-linecap: round;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0.2;
+}
+
+.footer
+{
+    position: fixed;
+    bottom: 0%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: black;
+    text-shadow: 5px 5px 4px grey;
+    z-index: -1;
+    font-size: 10px;
+}
+
+@media (max-width:600px)
+{
+    .section2
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
